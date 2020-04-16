@@ -2,6 +2,7 @@ package com.example.kotlinlog
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log //ここを追加
 
 class MainActivity : AppCompatActivity() {
 
