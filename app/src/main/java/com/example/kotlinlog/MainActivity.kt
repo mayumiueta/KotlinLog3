@@ -11,16 +11,15 @@ class MainActivity : AppCompatActivity() {
        super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val drink = 1
-
-        when (drink) {
-            0 -> {
-                Log.d("kotlintest", "コーヒーを注文しました")
-            }
-        1 -> Log.d("kotlintest", "紅茶を注文しました")
-        2 -> Log.d("kotlintest", "ミルクを注文しました")
-        else -> Log.d("kotlintest", "オーダーミスです")
+        for (i in 1 until 6) {
+            Log.d("kotlintest", "for文の" + i +  "回目")
         }
 
+       var num = 1
+
+    while (num < 6) {
+        Log.d("kotlintest", "while文の" + num  +  "回目")
+        num++
+}
 }
 }
