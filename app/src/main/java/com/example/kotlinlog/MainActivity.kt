@@ -11,17 +11,16 @@ class MainActivity : AppCompatActivity() {
        super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val num1 = 10 + 5 - 2 * 4 / 2
-        Log.d("kotlintest", "10 + 5 - 2 * 4 / 2 =" + num1 )
+        val drink = 1
 
-      val flag1 = true
-        val flag2 = false
-        Log.d("kotlintest", "flag1 && flag2=" + (flag1 && flag2))
-        Log.d("kotlintest", "flag1 || flag2=" + (flag1 || flag2))
+        when (drink) {
+            0 -> {
+                Log.d("kotlintest", "コーヒーを注文しました")
+            }
+        1 -> Log.d("kotlintest", "紅茶を注文しました")
+        2 -> Log.d("kotlintest", "ミルクを注文しました")
+        else -> Log.d("kotlintest", "オーダーミスです")
+        }
 
-       val num2 = 10
-        val num3 = 20
-        Log.d("kotlintest", "num2 < num3 =" + (num2 < num3))
-
-    }
+}
 }
