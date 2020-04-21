@@ -10,19 +10,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //引数に50と1000を指定してtotal関数を呼び出す
-        total(50, 1000)
-
-        //引数の値をかえることで処理内容を簡単に変更できる
-        total(1, 1111)
+        val t = total (50, 1000) // ここでtotalからsumを返してもらう
+        Log.d ("kotlintest", t.toString())
     }
 
-    //firstとlast、２つの引数を指定する
-        private fun total(first: Int, last: Int) {
+        private fun total(first: Int, last: Int) : Int {
         var sum = 0
         for ( i in first..last)  {
             sum += i
         }
-        Log.d ("kotlintest", sum.toString())
+        return sum
 }
 }
