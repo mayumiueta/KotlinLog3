@@ -6,16 +6,15 @@ import android.util.Log
 
 class MainActivity : AppCompatActivity() {
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
-       super.onCreate(savedInstanceState)
+        super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Array<Int>型の配列が作成される
-        val points = arrayOf(10, 6, 15, 23, 17)
 
-for ( i in points) {
-    Log.d("kotlintest", i. toString())
+        var sum = 0
+        for ( i in 1..10)  {
+            sum += i
+        }
+        Log.d ("kotlintest", sum.toString())
 }
-    }
 }
