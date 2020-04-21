@@ -10,12 +10,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //total関数を呼び出す
-        total()
+        //引数に100を指定してtotal関数を呼び出す
+        total(100)
     }
-        private fun total() {
+    //lastという名前のInt型の引数を指定する
+        private fun total(last: Int) {
         var sum = 0
-        for ( i in 1..10)  {
+        for ( i in 1..last)  {
             sum += i
         }
         Log.d ("kotlintest", sum.toString())
