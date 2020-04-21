@@ -10,7 +10,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+        //total関数を呼び出す
+        total()
+    }
+        private fun total() {
         var sum = 0
         for ( i in 1..10)  {
             sum += i
