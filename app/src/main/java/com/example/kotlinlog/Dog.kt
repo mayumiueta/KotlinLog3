@@ -2,7 +2,7 @@ package com.example.kotlinlog
 
 import android.util.Log
 
-class Dog {
+open class Dog {
     //プロパティ
     var name: String
     var age: Int
