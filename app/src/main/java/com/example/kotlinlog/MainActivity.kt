@@ -18,11 +18,11 @@ class MainActivity : AppCompatActivity() {
         Log.d ("kotlintest", "犬の名前は"+ dog.name + "です")
                Log.d("kotlintest", "犬の年齢は"+ dog.age + "才です")
 
-            val dog2 = Dog("ハチ", 10)
-        //名前をハチ、年齢10歳で、Dogのインスタンスを作る
-               dog2.say()
-               //ハチが吠えます（ログ出力)
-               Log.d ("kotlintest", "犬の名前は"+ dog2.name + "です")
-        Log.d ("kotlintest", "犬の年齢は"+ dog2.age + "才です" )
+        val bigdog = BigDog("ヨーゼフ", 15)
+        //名前をヨーゼフ、年齢１５歳で、BigDogのインスタンスを作る
+
+           bigdog.say()
+               Log.d ("kotlintest", "犬の名前は"+ bigdog.name + "です")
+        Log.d ("kotlintest", "犬の年齢は"+ bigdog.age + "才です" )
     }
 }

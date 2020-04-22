@@ -8,7 +8,7 @@ class BigDog: Dog {
     constructor(name: String, age: Int): super(name, age) {
 }
 
-    override fun say() {
+  override fun say() {
         super.say()
         Log.d("kotlintest", "大きな犬です。")
     }

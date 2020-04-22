@@ -14,7 +14,7 @@ open class Dog {
     }
 
     //メソッド
-    fun say(){
+  open  fun say(){
         Log.d("kotlintest", this.name + "(" + this.age + "歳)" + "「わんわん」")
     }
 }
