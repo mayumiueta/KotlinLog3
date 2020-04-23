@@ -10,9 +10,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val human = Human ("まゆみ", 54, "ゴルフ")
+    val str1 = "Hello"
+    val str2 = "World"
+    val str3 = "Hello"
 
-        human.say()
-        human.think()
+    if (str1.equals(str2)) {
+        Log.d("kotlintest", "str1とstr2は一緒です")
+    } else {
+        Log.d("kotlintest", "str1とstr2は異なります")
+    }
+
+    if (str1.equals(str3)) {
+        Log.d("kotlintest", "str1とstr3は一緒です")
+    } else {
+        Log.d("kotlintest", "str1とstr3は異なります")
+    }
     }
 }
